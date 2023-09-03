@@ -1,6 +1,6 @@
 # Catch The Kenny Game
 The purpose of this project I made to improve myself on Kotlin and Java: <br>
-In this game, we catch Ken by clicking on the constantly moving Ken and we earn points.
+In this game, we catch Ken by clicking on the constantly moving Ken and we earn points. <br>
 Can you beat the best score!?
 
 <h3 align="left">Languages ​​and Tools:</h3>
