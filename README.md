@@ -1,4 +1,5 @@
 # Catch The Kenny Game
+The purpose of this project I made to develop on Kotlin and Java:
 In this game, we catch Ken by clicking on the constantly moving Ken and we earn points.
 Can you beat the best score!?
 
