@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
                 AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
                 alert.setTitle("Restart?");
-                alert.setMessage("Score : " + score + " Are you want to play again?");
+                alert.setMessage("Are you want to play again?");
                 alert.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
