@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <TextView
         android:id="@+id/scoreText"
         android:layout_width="150dp"
@@ -25,7 +27,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="Best Score:  "
         android:textSize="20sp"
