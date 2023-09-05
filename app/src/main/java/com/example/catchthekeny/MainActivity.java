@@ -98,6 +98,10 @@ public class MainActivity extends AppCompatActivity {
                     image.setVisibility(View.INVISIBLE);
                 }
 
+
+
+
+
                 AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
                 alert.setTitle("Restart?");
                 alert.setMessage("Are you want to play again?");
@@ -118,6 +122,9 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
                 alert.show();
+
+
+
 
 
                 //Son skoru kaydetme.
