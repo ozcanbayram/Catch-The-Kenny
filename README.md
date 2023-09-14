@@ -8,7 +8,10 @@ Bu oyunda sürekli hareket eden Ken'e tıklayarak Ken'i yakalıyoruz ve puan kaz
 En iyi skoru geçebilir misin? <br>
 
 <h3 align="left">Languages ​​and Tools:</h3>
-<img src = "https://raw.githubusercontent.com/devicons /devicon/master/icons/java/java-original.svg" alt = "java" width = "40" height = "40"/>
-<img src = "https://logo-download.com/wp-content/data/images/png/Kotlin-logo.png" alt = "kotlin" width = "40" height = "40"/>
+
+![My Skills](https://skillicons.dev/icons?i=java,kotlin,androidstudio,)
 
 https://github.com/ozcanbayram/Catch-The-Kenny/assets/117665864/9309aa4c-3f2c-44af-b247-033b78126c2f
+https://github.com/ozcanbayram/Catch-The-Kenny-Game/assets/117665864/d7d1a29a-5a2e-4883-9629-4739f11c6e84
+
+
