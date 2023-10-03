@@ -167,4 +167,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public void restart(View view){
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
+    }
+
 }
