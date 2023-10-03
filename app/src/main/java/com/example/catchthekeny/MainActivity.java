@@ -174,4 +174,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void back (View view){
+        Intent intent = new Intent(MainActivity.this,LoginScreen.class);
+        startActivity(intent);
+        finish();
+    }
+
 }
