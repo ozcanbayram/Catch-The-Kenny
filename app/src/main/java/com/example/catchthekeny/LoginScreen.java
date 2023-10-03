@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class LoginScreen extends AppCompatActivity {
 
@@ -18,6 +19,11 @@ public class LoginScreen extends AppCompatActivity {
         Intent intent = new Intent(LoginScreen.this, MainActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public void close(View view){
+        Toast.makeText(this, "See you later!", Toast.LENGTH_SHORT).show();
+        System.exit(0);
     }
 
 }

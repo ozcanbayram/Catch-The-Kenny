@@ -118,7 +118,9 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(MainActivity.this, "Game is finished!", Toast.LENGTH_SHORT).show();
-                        System.exit(0);
+                        Intent intent = new Intent(MainActivity.this,LoginScreen.class);
+                        startActivity(intent);
+                        finish();
                     }
                 });
                 alert.show();
