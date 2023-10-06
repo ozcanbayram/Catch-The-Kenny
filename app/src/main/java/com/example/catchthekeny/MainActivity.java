@@ -118,7 +118,9 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(MainActivity.this, "Game is finished!", Toast.LENGTH_SHORT).show();
-                        System.exit(0);
+                        Intent intent = new Intent(MainActivity.this,LoginScreen.class);
+                        startActivity(intent);
+                        finish();
                     }
                 });
                 alert.show();
@@ -176,4 +178,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+<<<<<<< HEAD
+=======
+    public void restart(View view){
+        Intent intent = getIntent();
+        finish();
+        startActivity(intent);
+    }
+
+    public void back (View view){
+        Intent intent = new Intent(MainActivity.this,LoginScreen.class);
+        startActivity(intent);
+        finish();
+    }
+
+>>>>>>> 77137fa1fbd4a1d1975bc7c4d121283553e6d0b0
 }
