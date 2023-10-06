@@ -162,7 +162,18 @@ public class MainActivity extends AppCompatActivity {
             }
         };
         handler.post(runnable);
+    }
 
+    public void restart(View view){
+        //restart
+
+        //Intent intent = getIntent();
+        //finish();
+        //startActivity(intent);
+
+        Intent intent = new Intent(MainActivity.this,MainActivity.class);
+        startActivity(intent);
 
     }
+
 }

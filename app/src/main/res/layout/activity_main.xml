@@ -161,4 +161,16 @@
 
     </androidx.gridlayout.widget.GridLayout>
 
+    <Button
+        android:id="@+id/restartButton"
+        android:onClick="restart"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#FF5722"
+        android:text="Restart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
