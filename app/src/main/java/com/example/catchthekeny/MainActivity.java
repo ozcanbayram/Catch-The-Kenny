@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     Handler handler;
     Runnable runnable;
     SharedPreferences sharedPreferences;
-    int bestScore=0;
+    int bestScore = 0;
 
 
     @Override
@@ -62,29 +62,27 @@ public class MainActivity extends AppCompatActivity {
         imageView8 = findViewById(R.id.imageView8);
         imageView9 = findViewById(R.id.imageView9);
 
-        imageArray=new ImageView[] {imageView1,imageView2,imageView3,imageView4,imageView5,imageView6,imageView7,imageView8,imageView9};
-
-
+        imageArray = new ImageView[]{imageView1, imageView2, imageView3, imageView4, imageView5, imageView6, imageView7, imageView8, imageView9};
 
 
         sharedPreferences = this.getSharedPreferences("com.example.catchthekeny", Context.MODE_PRIVATE);
 
 
-        int writeBestScore = sharedPreferences.getInt("BestScore",0);
+        int writeBestScore = sharedPreferences.getInt("BestScore", 0);
 
-        if(writeBestScore == 0){
+        if (writeBestScore == 0) {
             bestScoreText.setText("Best Score: ");
-        }else{
+        } else {
             bestScoreText.setText("Best Score: " + writeBestScore);
         }
 
-       score=0;
+        score = 0;
 
-        new CountDownTimer(10000,1000){
+        new CountDownTimer(10000, 1000) {
 
             @Override
             public void onTick(long l) {
-                textTime.setText("Time: " + l/1000);
+                textTime.setText("Time: " + l / 1000);
             }
 
             @Override
@@ -92,9 +90,8 @@ public class MainActivity extends AppCompatActivity {
                 textTime.setText("Time off!");
 
 
-
                 handler.removeCallbacks(runnable);
-                for(ImageView image : imageArray){
+                for (ImageView image : imageArray) {
                     image.setVisibility(View.INVISIBLE);
                 }
 
@@ -118,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(MainActivity.this, "Game is finished!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this,LoginScreen.class);
+                        Intent intent = new Intent(MainActivity.this, LoginScreen.class);
                         startActivity(intent);
                         finish();
                     }
@@ -126,15 +123,12 @@ public class MainActivity extends AppCompatActivity {
                 alert.show();
 
 
-
-
-
                 //Son skoru kaydetme.
 
-                int bestScore=sharedPreferences.getInt("BestScore",0);
-                if(bestScore == 0 || bestScore < score){
+                int bestScore = sharedPreferences.getInt("BestScore", 0);
+                if (bestScore == 0 || bestScore < score) {
                     bestScore = score;
-                    sharedPreferences.edit().putInt("BestScore",bestScore).apply();
+                    sharedPreferences.edit().putInt("BestScore", bestScore).apply();
                     Toast.makeText(MainActivity.this, "New Best Score is" + bestScore, Toast.LENGTH_SHORT).show();
                     bestScoreText.setText("Best score: " + bestScore);
                 }
@@ -144,53 +138,34 @@ public class MainActivity extends AppCompatActivity {
 
         hideImages();
     }
-    public void increaseScore(View view){
+
+    public void increaseScore(View view) {
         score++;
         textScore.setText("Score: " + score);
     }
-    public void hideImages(){
+
+    public void hideImages() {
 
         handler = new Handler();
         runnable = new Runnable() {
             @Override
             public void run() {
-                for(ImageView image : imageArray){
+                for (ImageView image : imageArray) {
                     image.setVisibility(View.INVISIBLE);
                 }
                 Random random = new Random();
                 int i = random.nextInt(9);
                 imageArray[i].setVisibility((View.VISIBLE));
-                handler.postDelayed(this,500);
+                handler.postDelayed(this, 500);
             }
         };
         handler.post(runnable);
     }
 
-    public void restart(View view){
-        //restart
-
-        //Intent intent = getIntent();
-        //finish();
-        //startActivity(intent);
-
-        Intent intent = new Intent(MainActivity.this,MainActivity.class);
-        startActivity(intent);
-
-    }
-
-<<<<<<< HEAD
-=======
-    public void restart(View view){
-        Intent intent = getIntent();
-        finish();
-        startActivity(intent);
-    }
-
-    public void back (View view){
+    public void back(View view){
         Intent intent = new Intent(MainActivity.this,LoginScreen.class);
-        startActivity(intent);
         finish();
+        startActivity(intent);
     }
 
->>>>>>> 77137fa1fbd4a1d1975bc7c4d121283553e6d0b0
 }

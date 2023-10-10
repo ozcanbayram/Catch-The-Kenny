@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="restart"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#FF5722"
-        android:fontFamily="sans-serif-condensed"
         android:gravity="center"
+        android:background="#FF5722"
         android:text="Catch The Kenny"
         android:textColor="@color/cardview_light_background"
+        android:fontFamily="sans-serif-condensed"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,10 +55,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="#D4FF5722"
-        android:fontFamily="serif"
+        android:textColor="#fff"
         android:gravity="center"
         android:text="Time:  10"
-        android:textColor="#fff"
+        android:fontFamily="serif"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -162,39 +161,13 @@
 
     </androidx.gridlayout.widget.GridLayout>
 
-<<<<<<< HEAD
-    <Button
-        android:id="@+id/restartButton"
-        android:onClick="restart"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:textSize="17sp"
-        android:layout_marginEnd="1dp"
-        android:backgroundTint="#FF5722"
-        android:text="Restart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1" />
-=======
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/backButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="5dp"
-        android:onClick="restart"
-        app:layout_constraintEnd_toEndOf="@+id/timeText"
-        app:layout_constraintTop_toBottomOf="@+id/textView1"
-        app:srcCompat="@drawable/restart" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
         android:onClick="back"
-        app:layout_constraintStart_toStartOf="@+id/timeText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView1"
         app:srcCompat="@drawable/back" />
-
->>>>>>> 77137fa1fbd4a1d1975bc7c4d121283553e6d0b0
 
 </androidx.constraintlayout.widget.ConstraintLayout>
